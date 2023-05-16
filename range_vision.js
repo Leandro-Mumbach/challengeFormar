@@ -20,45 +20,10 @@ Valor de la visión:3 + 5 = 8        valor de la visión:3 + 4 + 3 + 1 = 11
 
 Sí, 8 es el valor mínimo de visión, tanto para el primer 3 como para el 1. Eso satisface los criterios, por lo que la función devuelve true.*/
 
-/* function range_vision(number) {
-  // digits = Array.from(String(number), Number); // Convertir el número en un array de dígitos
-  for (let i = 0; i < number.length; i++) {
-    let visionRange = number[i];
-    let visionValue = 0;
-    for (let j = i - visionRange; j <= i + visionRange; j++) {
-      if (j >= 0 && j < number.length) {
-        visionValue += number[j];
-      }
-    }
-    if (number[i] === 1 && visionValue < number[i]) {
-      return true;
-    }
-  }
-  return false;
-}
- */
 
-/* function range_vision(number) {
-    var digits = Array.from(String(number), Number); // Convertir el número en un array de dígitos
-    var minValue = Number.MAX_SAFE_INTEGER;
-    for (var i = 0; i < digits.length; i++) {
-      var visionRange = digits[i];
-      var visionValue = 0;
-      for (var j = i - visionRange; j <= i + visionRange; j++) {
-        if (j >= 0 && j < digits.length) {
-          visionValue += digits[j];
-        }
-      } 
-      if (digits[i] === 1 && visionValue < minValue) {
-        minValue = visionValue;
-      }
-    }
-    return minValue === 1; // Cambiar el valor a verificar según los ejemplos
-  }
-   */
 
-console.log(range_vision(34315));   // true
-console.log(range_vision(123456));  // false
-console.log(range_vision(111));     // false
-console.log(range_vision(212));     // true
-
+    
+/* console.log(range_vision(34315)); // true
+console.log(range_vision(123456)); // false
+console.log(range_vision(111)); // false
+console.log(range_vision(212)); // true */
